@@ -14,7 +14,7 @@
 
   $get_data = createLead($email, $funnelID, $addEmailList, $removeEmailList, $addSMSList, $removeSMSList, $fName, $lName, $cellNo);
 
-  echo "<PRE>";
-  print_r($get_data);
+  // echo "<PRE>";
+  // print_r($get_data);
 
 ?>

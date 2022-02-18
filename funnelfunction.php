@@ -34,7 +34,7 @@
     curl_setopt($x, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($x, CURLOPT_URL, $url);
     curl_setopt($x, CURLOPT_HTTPHEADER, array(
-                                                'X-Auth-Token: a5568e01ea92734f06',
+                                                'X-Auth-Token: a5568e04f06',
                                                 'Content-Type: application/json',
                                               )
                 );
@@ -83,7 +83,7 @@
       mail($toEmail, $subject, $curlError, $headers);  
     }
 
-    return $result;
+    // return $result;
     exit();
   }
 
