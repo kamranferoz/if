@@ -26,7 +26,7 @@
     $emailID = $data['email'];
     $funnelID = $data['funnel_id'];
     $array = $data;
-    
+
     $post = json_encode($array, true);
     $x = curl_init($url );
 
@@ -34,7 +34,7 @@
     curl_setopt($x, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($x, CURLOPT_URL, $url);
     curl_setopt($x, CURLOPT_HTTPHEADER, array(
-                                                'X-Auth-Token: a5568e04f06',
+                                                'X-Auth-Token: a5568e01ea920b21499eb6c588734f06',
                                                 'Content-Type: application/json',
                                               )
                 );
@@ -51,7 +51,7 @@
     $result = curl_exec($x) or die($curlError = "Interfunnels server error!");
 
     $response = json_decode($result , true);
-    
+
     if(isset($response["message"]))
     {
       $curlError .= $response["message"] .": <br>";
